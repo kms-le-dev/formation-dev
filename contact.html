@@ -52,10 +52,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link">Accueil</a>
-                <a href="#" class="nav-item nav-link">Formation</a>
                 <a href="contact.html" class="nav-item nav-link active">Contact</a>
-                <a href="#" class="nav-item nav-link">Connexion</a>
-                <a href="#" class="nav-item nav-link">Inscription</a>
             </div>
         </div>
     </nav>
@@ -116,43 +113,43 @@
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <iframe class="position-relative rounded w-100 h-100"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d151158.39228080283!2d-4.009187150025772!3d5.395293670287684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ed72ca2fe9ff%3A0xc511a189e6cd48b2!2sCocody%2C%20Abidjan!5e0!3m2!1sfr!2sci!4v1761953950447!5m2!1sfr!2sci" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                         frameborder="0" style="min-height: 300px; border:0;" allowfullscreen="" aria-hidden="false"
                         tabindex="0"></iframe>
                 </div>
                 <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    <label for="name">Votre Nom</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Votre Email</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Objet</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Envoyer le Message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+  <form id="contact-form">
+    <div class="row g-3">
+      <div class="col-md-6">
+        <div class="form-floating">
+          <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Votre Nom" required>
+          <label for="prenom">Votre Nom</label>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-floating">
+          <input type="email" class="form-control" id="email" name="email" placeholder="Votre Email" required>
+          <label for="email">Votre Email</label>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-floating">
+          <input type="text" class="form-control" id="subject" name="subject" placeholder="Objet" required>
+          <label for="subject">Objet</label>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-floating">
+          <textarea class="form-control" id="message" name="message" style="height:150px" placeholder="Votre message..." required></textarea>
+          <label for="message">Message</label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary w-100 py-3" type="submit">Envoyer le Message</button>
+      </div>
+    </div>
+  </form>
+</div>
             </div>
         </div>
     </div>
@@ -165,9 +162,9 @@
             <div class="row g-5 d-flex justify-content-center align-items-center">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">LIENS</h4>
-                    <a class="btn btn-link" href="">ACCUEIL</a>
-                    <a class="btn btn-link" href="">FORMATION</a>
-                    <a class="btn btn-link" href="">CONTACT</a>
+                    <a class="btn btn-link" href="index.html">ACCUEIL</a>
+                    <a class="btn btn-link" href="#formation2">FORMATION</a>
+                    <a class="btn btn-link" href="contact.html">CONTACT</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">Contact</h4>
@@ -175,10 +172,7 @@
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+225 0757109835</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>kanigui43@gmail.com</p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://facebook.com/meneur.dejeu.92"><i class="fab fa-facebook-f"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -210,7 +204,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        <p>© 2025 tous droits reservé.  <a href="#">Kanigui Moise Silué</a></p>
+                        <p>© 2025 tous droits reservé.  <a href="https://wa.me/message/X6EHY2YLVRB2O1">Kanigui Moise Silué</a></p>
                     </div>                  
                 </div>
             </div>
@@ -234,6 +228,26 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- === SCRIPT EMAILJS === -->
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function() {
+    emailjs.init("KhurxGWTIehNK31ms"); // 🔑 Mets ta clé publique ici
+  })();
+
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm('service_69u7nih', 'template_fbmljnj', this)
+      .then(function() {
+        alert('✅ Votre message a été envoyé avec succès !');
+        document.getElementById('contact-form').reset();
+      }, function(error) {
+        alert('❌ Une erreur est survenue : ' + JSON.stringify(error));
+      });
+  });
+</script>
 </body>
 
 </html>
