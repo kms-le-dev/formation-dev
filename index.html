@@ -584,8 +584,10 @@ document.addEventListener('DOMContentLoaded', function() {
             const telephone = document.getElementById('telephone').value;
             const whatsapp = document.getElementById('whatsapp').value;
             const email = document.getElementById('email').value;
-            const formation = document.getElementById('formation').value;
-            
+            // Récupère le texte affiché de l'option sélectionnée (inclut la partie "| Prix : ...")
+            const formationSelect = document.getElementById('formation');
+            const formation = formationSelect.options[formationSelect.selectedIndex].text;
+
             const message = `Bonjour, je souhaite m'inscrire à une formation.%0A%0A` +
                           `*Nom:* ${nom}%0A` +
                           `*Prénom:* ${prenom}%0A` +
